@@ -1,0 +1,39 @@
+{
+    "name": "dmitryrechkin/php-graphql-schema-fileparser",
+    "type": "php-graphql-schema-fileparser",
+    "description": "PHP GraphQL Schema file parser with caching",
+    "keywords": [
+    ],
+    "license": "AGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Dmitry Rechkin",
+            "email": "rechkin@gmail.com",
+            "homepage": "https://github.com/dmitryrechkin/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "webonyx/graphql-php": "^14.11"
+    },
+    "require-dev": {
+        "dmitryrechkin/php-standard": "^1.0",
+        "dmitryrechkin/php-phpunit-bootstrap": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DmitryRechkin\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DmitryRechkin\\Tests\\" : "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
