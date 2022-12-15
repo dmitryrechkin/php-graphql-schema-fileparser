@@ -23,9 +23,9 @@ class FileModificationTimeComparator
 	 * sets file we will be comparing against
 	 *
 	 * @param string $filePath
-	 * @return self
+	 * @return FileModificationTimeComparator
 	 */
-	public function forFile(string $filePath): self
+	public function forFile(string $filePath): FileModificationTimeComparator
 	{
 		$this->filePath = $filePath;
 		return $this;

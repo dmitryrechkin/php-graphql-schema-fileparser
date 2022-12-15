@@ -29,9 +29,9 @@ class CacheFilePathBuilder
 	 * sets target directory where cache file should be located
 	 *
 	 * @param string $targetDirectoryPath
-	 * @return self
+	 * @return CacheFilePathBuilder
 	 */
-	public function withTargetDirectoryPath(string $targetDirectoryPath): self
+	public function withTargetDirectoryPath(string $targetDirectoryPath): CacheFilePathBuilder
 	{
 		$this->targetDirectoryPath = rtrim($targetDirectoryPath, PATH_SEPARATOR);
 		return $this;
@@ -41,9 +41,9 @@ class CacheFilePathBuilder
 	 * sets source file path
 	 *
 	 * @param string $sourceFilePath
-	 * @return self
+	 * @return CacheFilePathBuilder
 	 */
-	public function withSourceFilePath(string $sourceFilePath): self
+	public function withSourceFilePath(string $sourceFilePath): CacheFilePathBuilder
 	{
 		$this->sourceFilePath = rtrim($sourceFilePath, PATH_SEPARATOR);
 		return $this;
